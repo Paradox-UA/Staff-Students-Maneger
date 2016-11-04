@@ -1,0 +1,959 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="c21541a6-7770-429d-81c2-1959efd2b2a0"
+  name="UseCaseDepartmentManager" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="cb14b949-94da-43ad-bfd9-aa54712ea307"
+        name="Actor1"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ecef7c81-0a9b-4a1a-be80-607259c391ee"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Показати групи"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a679ee07-f331-4340-86bb-12311f2c341d"
+              LastKnownName="Показати групи"
+              LastKnownLocation="UseCaseDepartmentManager.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5b779cdd-9cbf-4d5f-b396-c645f4fde0c8"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aa24b79d-f648-46e3-9ae8-fb3a00345b87"
+                  name="Показати групи"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="80641900-347c-4e71-a66a-12aac94eff16"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Показати студентів групи"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="80c544b4-fbd3-460f-82f3-fa9a23691f76"
+              LastKnownName="Показати студентів групи"
+              LastKnownLocation="UseCaseDepartmentManager.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a9dd2fea-77bc-4374-8c99-be83fd752644"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e7d1968c-03fa-4d48-9167-2df1fb314636"
+                  name="Показати студентів групи"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="74b3a47d-4f8e-4600-8cd6-5370e77ccfef"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Показати всіх студентів кафедри"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="dba798e4-822d-4537-acec-b5d388feba9d"
+              LastKnownName="Показати всіх студентів кафедри"
+              LastKnownLocation="UseCaseDepartmentManager.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ca976a44-adb9-40fe-a127-2dc2d6bba170"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8d5312a9-4cda-4f85-bd53-68664cf1e696"
+                  name="Показати всіх студентів кафедри"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9bbc3b2d-4963-4230-b9ec-b6df24fcdedf"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Показати співробітників кафедри"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a46afe34-b6db-4b3d-a9ed-f7d86840f9c8"
+              LastKnownName="Показати співробітників кафедри"
+              LastKnownLocation="UseCaseDepartmentManager.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cad73322-6c41-4940-8e91-90bf5b0dfe54"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="751dccff-7f70-4eb3-a01d-41c158de4610"
+                  name="Показати співробітників кафедри"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="5b0d1974-ff87-42ff-a858-9808f81da2d7"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Показати інформацію про персону"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fd7d1c01-d372-4cfe-a56f-b0f7e1f3dadd"
+              LastKnownName="Показати інформацію про персону"
+              LastKnownLocation="UseCaseDepartmentManager.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7f324ff6-9d24-4c7a-98ec-8aa855c38343"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="84cd98d2-f06b-47d1-ba97-b8b42913b2f8"
+                  name="Показати інформацію про персону"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="91df403b-25cc-43cc-90ce-d27ab221e6ef"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Редагувати дані кафедри"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ee3a9d3d-9011-4b06-b494-a6d188c9bcf5"
+              LastKnownName="Редагувати дані кафедри"
+              LastKnownLocation="UseCaseDepartmentManager.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="33f4fc7c-ef92-45a0-99bb-77394ae80c29"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="babdda6f-b149-44eb-bf5c-66aeb1b02c01"
+                  name="Редагувати дані кафедри"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2807bad6-d13b-4b55-bc64-24c54a71639b"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Редагувати дані персони"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="e240dac7-09da-43bc-b782-fb92565a3a20"
+              LastKnownName="Редагувати дані персони"
+              LastKnownLocation="UseCaseDepartmentManager.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="11bbd778-d68a-4686-9418-a942d6979e1d"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5d38a78b-4cdd-4f18-8c63-1c135064e9a7"
+                  name="Редагувати дані персони"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2e746afc-cc57-4f7b-80a9-6bf8003b7f0e"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Зберегти базу даних"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="555ae708-3245-48f6-9d1a-c5af790dfb78"
+              LastKnownName="Зберегти базу даних"
+              LastKnownLocation="UseCaseDepartmentManager.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="55902568-dd36-4dcb-8268-bad02bc6d960"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9dbccd9b-b827-4255-b458-12bc1cd80e78"
+                  name="Зберегти базу даних"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a679ee07-f331-4340-86bb-12311f2c341d"
+        name="Показати групи"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Показати наявні на кафедрі групи
+Контекст використання: надається можливість продивитися існуючі групи кафедри
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: демонстрація даних кафедри
+Передумова: -
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: буде виведені назви існуючих груп
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Демонстрація наявних груп
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+
+</description>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="80c544b4-fbd3-460f-82f3-fa9a23691f76"
+        name="Показати студентів групи"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Показати студентів вказаної групи
+Контекст використання: надається можливість продивитися студентський  склад групи 
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: демонстрація даних групи
+Передумова: вказана існуюча група
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: буде виведені ПІБ студентів групи
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Демонстрація студентів в групі
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+
+
+</description>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2947bdc1-41f6-4e93-9886-027f573256a1"
+        name="Зарахування студента"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Створення нового студента на кафедрі
+Контекст використання: надається можливість додати нового студента на кафедру
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних кафедри
+Передумова: на кафедрі існує хоч одна група
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: до списку студентів додано нову персону
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання основних даних нового студента
+3. Додавання студента до групи кафедри залежно від вказаних даних
+Альтернатива: 
+1. Вказано недопустимі значення даних студента , або заповнені не всі дані
+2. Вивід оповіщення про відповідну проблему
+3. Повернення на пункт 2 основного сценарію
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+</description>
+        <extendedCases>
+          <extend
+            Id="c0fd6033-056c-43e5-aad0-a4c5b1ea23d3">
+            <useCaseMoniker
+              Id="ee3a9d3d-9011-4b06-b494-a6d188c9bcf5"
+              LastKnownName="Редагувати дані кафедри"
+              LastKnownLocation="UseCaseDepartmentManager.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a46afe34-b6db-4b3d-a9ed-f7d86840f9c8"
+        name="Показати співробітників кафедри"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Показати співробітників кафедри
+Контекст використання: надається можливість продивитися загальний склад  співробітників
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: демонстрація даних кафедри
+Передумова: -
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: буде виведені ПІБ співробітників кафедри
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Демонстрація співробітників на кафедрі
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+
+
+
+
+</description>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fd7d1c01-d372-4cfe-a56f-b0f7e1f3dadd"
+        name="Показати інформацію про персону"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Показати дані про вказану персону
+Контекст використання: надається можливість продивитися відомості про персону
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: демонстрація даних персони
+Передумова: -
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: буде виведені дані персони
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання ПІБ персони
+3. Виведення даних про персону.
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+
+
+
+
+</description>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dba798e4-822d-4537-acec-b5d388feba9d"
+        name="Показати всіх студентів кафедри"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Показати студентів кафедри
+Контекст використання: надається можливість продивитися загальний студентський  склад  
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: демонстрація даних кафедри
+Передумова: -
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: буде виведені ПІБ студентів кафедри
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Демонстрація студентів на кафедрі
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+
+
+
+</description>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="dbd9e1ea-e023-4bea-bd34-e065bc089a71"
+        name="Прийняття на роботу співробітника"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Створення нового співробітника кафедри
+Контекст використання: надається можливість додати нового співробітника на кафедру
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних кафедри
+Передумова: -
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: до списку співробітників додано нову особу
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання даних нового співробітника
+3. Додавання нового співробітника до загального списку
+Альтернатива: 
+1. Додається співробітник на посаду, яка вже зайнята та яку може посідати лише одна особа
+2. Вивід оповіщення про відповідну проблему
+3. Надаються варіанти : 
+1)Замінити новим співробітником існуючого
+2)Не створювати нового співробітника
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+</description>
+        <extendedCases>
+          <extend
+            Id="87c23d3a-70a0-4f19-bf08-77ca4841fe95">
+            <useCaseMoniker
+              Id="ee3a9d3d-9011-4b06-b494-a6d188c9bcf5"
+              LastKnownName="Редагувати дані кафедри"
+              LastKnownLocation="UseCaseDepartmentManager.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="671afcc5-6449-4126-9479-26d4b0685fff"
+        name="Відрахування студента"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Видалення студента з кафедри
+Контекст використання: надається можливість видалити вказаного студента з кафедри
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних кафедри
+Передумова: на кафедрі існує хоч один студент
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: зі списку студентів видалено вказану особу
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання ПІБ студента
+3. Видалення студента зі загального списку студентів
+Альтернатива1: 
+1. Вказано дані неіснуючого студента
+2. Вивід оповіщення про відповідну проблему
+3. Повернення на пункт 2 основного сценарію
+Альтернатива1: 
+1. Існують студенти з однаковими ПІБ
+2. Вказання додаткових даних
+3. Видалення студента зі загального списку студентів
+
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+</description>
+        <extendedCases>
+          <extend
+            Id="820a9277-afc0-4aaf-87cb-9f3917333340">
+            <useCaseMoniker
+              Id="ee3a9d3d-9011-4b06-b494-a6d188c9bcf5"
+              LastKnownName="Редагувати дані кафедри"
+              LastKnownLocation="UseCaseDepartmentManager.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ee3a9d3d-9011-4b06-b494-a6d188c9bcf5"
+        name="Редагувати дані кафедри"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Редагування даних кафедри
+Контекст використання: надається можливість редагувати основні характеристики
+кафедри (назва факультету, кафедри, чисельність студентів та співробітників тощо)
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних кафедри
+Передумова: -
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: змінена та збережена вказана відповідна інформація 
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вибір характеристики, яку необхідно змінити
+3. Вказання нового значення характеристики
+4. Зміна вказаної характеристики
+Альтернатива: 
+1. Вказано недопустимі значення для обраної характеристики
+2. Вивід оповіщення 
+3. Дані не зазнають змін
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+</description>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e240dac7-09da-43bc-b782-fb92565a3a20"
+        name="Редагувати дані персони"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Редагування даних персони
+Контекст використання: надається можливість редагувати дані вказаної персони
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних персони
+Передумова: вказана існуюча персона
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: змінена та збережена вказана відповідна інформація 
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання ПІБ та за необхідності додаткових даних персони
+3. Вказання нових значень потрібних характеристик
+4. Зміна вказаних даних
+Альтернатива: 
+1. Вказано недопустимі значення для обраної характеристики
+2. Вивід оповіщення 
+3. Дані не зазнають змін
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+</description>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6c0dbab4-98fb-4b43-a278-25def9e3a6ff"
+        name="Звільнення співробітника"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Видалення співробітника з кафедри
+Контекст використання: надається можливість видалити вказаного співробітника з кафедри
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних кафедри
+Передумова: на кафедрі існує хоч один співробітник
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: зі списку співробітників видалено вказану особу
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання ПІБ та посади співробітника
+3. Звільнення особи з відповідної посади
+Альтернатива1: 
+1. Вказано дані неіснуючого співробітника
+2. Вивід оповіщення про відповідну проблему
+3. Повернення на пункт 2 основного сценарію
+
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+
+</description>
+        <extendedCases>
+          <extend
+            Id="83fc6115-8e7a-4271-9a63-713e084d3f66">
+            <useCaseMoniker
+              Id="ee3a9d3d-9011-4b06-b494-a6d188c9bcf5"
+              LastKnownName="Редагувати дані кафедри"
+              LastKnownLocation="UseCaseDepartmentManager.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f89825b0-e93f-40be-ad55-8f295a4ea496"
+        name="Зміна особистих даних"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Редагування особистих даних персони
+Контекст використання: надається можливість редагувати такі дані вказаної персони
+як вік, стать, ПІБ тощо.
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних персони
+Передумова: вказана існуюча персона
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: змінена та збережена вказана відповідна інформація 
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання ПІБ та за необхідності додаткових даних персони
+3. Вказання нових значень потрібних характеристик
+4. Зміна вказаних даних
+Альтернатива: 
+1. Вказано недопустимі значення для обраної характеристики
+2. Вивід оповіщення 
+3. Дані не зазнають змін
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+</description>
+        <extendedCases>
+          <extend
+            Id="764e2198-2167-4763-bddd-3f8fe636ed9b">
+            <useCaseMoniker
+              Id="e240dac7-09da-43bc-b782-fb92565a3a20"
+              LastKnownName="Редагувати дані персони"
+              LastKnownLocation="UseCaseDepartmentManager.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="142bf293-7654-436c-91fb-0b421df774f8"
+        name="Зміна професійних даних"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Редагування професійних даних персони
+Контекст використання: надається можливість редагувати такі дані вказаної персони
+як середній бал, заборгованість(для студентів), стаж, платня (для співробітникві).
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних персони
+Передумова: вказана існуюча персона
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: змінена та збережена вказана відповідна інформація 
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання ПІБ та за необхідності додаткових даних персони
+3. Вказання нових значень потрібних характеристик
+4. Зміна вказаних даних
+Альтернатива: 
+1. Вказано недопустимі значення для обраної характеристики
+2. Вивід оповіщення 
+3. Дані не зазнають змін
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+</description>
+        <extendedCases>
+          <extend
+            Id="6dbc7d35-b609-4988-ac63-fd81c616ae58">
+            <useCaseMoniker
+              Id="e240dac7-09da-43bc-b782-fb92565a3a20"
+              LastKnownName="Редагувати дані персони"
+              LastKnownLocation="UseCaseDepartmentManager.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="199908a7-e7be-4504-a944-b140ede5d47c"
+        name="Перевід до іншої групи"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Редагування особистих даних персони
+Контекст використання: надається можливість змінити групу на кафедрі для
+вказаної персони (студента)
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних персони
+Передумова: вказана існуюча персона
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: змінена та збережена вказана відповідна інформація 
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання ПІБ та за необхідності додаткових даних персони
+3. Вказання нової групи для особи
+4. Зміна вказаних даних
+Альтернатива: 
+1. Вказано неіснуючу групу
+2. Вивід оповіщення 
+3. Дані не зазнають змін
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+</description>
+        <extendedCases>
+          <extend
+            Id="b770bbb9-ccc2-455c-9550-83fe3934edf8">
+            <useCaseMoniker
+              Id="e240dac7-09da-43bc-b782-fb92565a3a20"
+              LastKnownName="Редагувати дані персони"
+              LastKnownLocation="UseCaseDepartmentManager.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0b653f50-5bb6-40fc-8924-9fbcf191d746"
+        name="Додати нову групу"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Створення нової групи на кафедрі
+Контекст використання: надається можливість додати нову групу на кафедру
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних кафедри
+Передумова: -
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: до списку груп додано новий елемент
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання назви нової групи
+3. Додавання групи до списку
+Альтернатива: 
+1. Вказано назву вже існуючої групи
+2. Вивід оповіщення про відповідну проблему
+3. Повернення на пункт 2 основного сценарію
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+</description>
+        <extendedCases>
+          <extend
+            Id="3fc56c39-630c-4c05-a223-8c73962f2ee7">
+            <useCaseMoniker
+              Id="ee3a9d3d-9011-4b06-b494-a6d188c9bcf5"
+              LastKnownName="Редагувати дані кафедри"
+              LastKnownLocation="UseCaseDepartmentManager.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="746cfb4b-c705-4a10-95b8-90eca44881b2"
+        name="Видалити існуючу групу"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Видалення групи з кафедри
+Контекст використання: надається можливість видалити групу з кафедри
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних кафедри
+Передумова: вказана існуюча група
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: зі списку груп видалено вказаний елемент
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання назви групи
+3. Видалення групи зі загального списку груп
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+
+</description>
+        <extendedCases>
+          <extend
+            Id="756dedfe-5eba-4e66-9c58-ef4ef398a36e">
+            <useCaseMoniker
+              Id="ee3a9d3d-9011-4b06-b494-a6d188c9bcf5"
+              LastKnownName="Редагувати дані кафедри"
+              LastKnownLocation="UseCaseDepartmentManager.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="555ae708-3245-48f6-9d1a-c5af790dfb78"
+        name="Зберегти базу даних"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
