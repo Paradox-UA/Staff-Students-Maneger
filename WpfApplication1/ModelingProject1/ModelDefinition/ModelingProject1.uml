@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="b373c9d2-6f65-4cfe-98eb-9f842a20f0a6"
   name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -59,6 +59,7 @@
           <property
             Id="b7bd106e-04a1-4e1d-a5b8-26093eecd279"
             name="Name"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -66,7 +67,14 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="1b0f96f3-8da0-43e1-b22e-baa854286312"
             name="Surname"
@@ -78,10 +86,18 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
           <property
             Id="e89e969f-6b9c-4f17-b909-f57a5692da53"
             name="SecondName"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -89,8 +105,182 @@
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="330f8185-61f6-4340-8dd8-749535ae091d"
+            name="GetName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a862fe49-b157-46bc-9fca-79a39713deb4"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5d607af6-11bf-4d74-b4f9-0bd22616fe41"
+            name="SetName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c7703aa9-c187-490b-9d8b-6e64ce75d4f5"
+                  name="String name"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5d445898-c801-4c19-a9ef-2b4dc431644c"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3ce2460e-af8f-485c-97ea-e7e143db2415"
+                      LastKnownName="void"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="25fe109d-7d31-4545-ace0-2f2b40a1fb4f"
+            name="GetSecondName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ba058618-dbde-49be-951e-372206d8e2c4"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="6d31f080-7799-48b9-9a13-c7f27bc1760e"
+            name="GetSurname"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a4b33b1a-facf-448c-be09-6ee85d010826"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="beb84f1d-1633-4b72-8748-0050d5010517"
+            name="SetSurname"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9b7bdff1-f926-4ece-b16c-7bd87434c2f1"
+                  name="String surname"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6d476ae8-b6b0-47ad-bcd7-2f1bd2f0c491"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3ce2460e-af8f-485c-97ea-e7e143db2415"
+                      LastKnownName="void"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bb8b5da1-1f7e-4ae7-b774-5679cd19b58d"
+            name="SetSecondName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0a3fb4c5-42e9-41f0-a0c0-97376bfa8653"
+                  name="String secondName"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f6e386b6-24eb-41aa-986f-bcd457a55c94"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3ce2460e-af8f-485c-97ea-e7e143db2415"
+                      LastKnownName="void"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -225,15 +415,74 @@
           </property>
           <property
             Id="5a0cae19-cdf6-44c0-b198-3239ab2efd9c"
-            name="contractOrFree: ContractOrFree"
+            name="contractOrFree"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
+            isUnique="false"
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
-            isComposite="false" />
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="10bb7fe1-90e3-496d-a765-57c850ae1e3c"
+                LastKnownName="ContractOrFree"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f2ac20c3-8dc2-44ee-9096-3558a2f373fc"
+            name="GetContractOrFree"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a52f716f-475c-4e46-ad19-c89e348856d0"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="10bb7fe1-90e3-496d-a765-57c850ae1e3c"
+                      LastKnownName="ContractOrFree"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9788e94f-40de-4ca4-9102-b7fd3a848c26"
+            name="GetEmplyee"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="67ed34e6-fbc4-4a3e-9f04-4fd450b487d8"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="aa5eeaa8-de7b-4287-8ac1-e490bb5a2f63"
+                      LastKnownName="Employee"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -386,6 +635,56 @@
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4382a33d-0734-42ff-ae37-75d0c491f447"
+            name="GetPosition"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5dd2f9e2-f7cc-439a-851b-7bace2458511"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="39daad53-5001-4c1e-a919-076b09201246"
+                      LastKnownName="Position"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="70e0d098-cdf0-46b3-8168-70947ebef316"
+            name="GetStudent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c0185220-3f8c-4a9e-a689-1ea3343b8134"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="44928ffe-a62e-4567-aa78-5ec9214df5f3"
+                      LastKnownName="Student"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -559,6 +858,7 @@
           <property
             Id="26216651-7a1e-46e8-89e1-4052eecbadee"
             name="students"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -577,6 +877,7 @@
           <property
             Id="df98675e-b6c0-4f81-958e-8a844e372d23"
             name="nameGroup"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -586,6 +887,180 @@
             aggregation="None"
             isComposite="false" />
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d3095fc6-55fe-4bd6-8593-c2fc9115fda9"
+            name="AddNewStudent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="63fad331-e455-4486-b3ae-2af408c5406e"
+                  name="Student s"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="abce7a6d-6761-4d69-985d-f7164ad32c8d"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3ce2460e-af8f-485c-97ea-e7e143db2415"
+                      LastKnownName="void"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a3373784-0d12-4733-9b2e-7a1c6d96dc8a"
+            name="GetStudent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f9679c07-0d12-4e9e-a27a-7ad972801946"
+                  name="Student s"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fb9df13b-a391-4ccb-99c9-14a345c69ccf"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="44928ffe-a62e-4567-aa78-5ec9214df5f3"
+                      LastKnownName="Student"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="278d4fb8-618a-4475-aa4a-0d7d8e9bc1c6"
+            name="RemoveStudent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8c9cff6d-d426-452a-8045-42410c61cacf"
+                  name="Student s"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="967416d1-de52-450b-9441-4f6505ccb1f7"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="39889017-fc59-46ac-ab4c-d63961b043b6"
+                      LastKnownName="bool"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a5f6483b-28ed-4bab-ba6f-dfd44ba37aff"
+            name="GetNameGroup"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1f4c0798-3e6d-41a6-8d5d-d33137a6fd41"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="44920383-54fe-4ea7-9f4f-7d9b327db1e8"
+            name="GetStudentList"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="370a8ff3-bbe7-4f55-87cd-b41b6f8bb3b1"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="5127544d-94e8-442a-8a12-af58b6c96459"
+                      LastKnownName="List&lt;Students&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d2208f97-b1d8-4697-b653-3ab7d4c5262f"
+            name="SetNameGroup"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="eadbdc8b-620e-43a6-b587-1c600038972d"
+                  name="String name"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6f9ce7b6-1901-4a21-b323-3a53e1bb84a6"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3ce2460e-af8f-485c-97ea-e7e143db2415"
+                      LastKnownName="void"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -599,6 +1074,7 @@
           <property
             Id="73155d59-70ca-48a2-9856-22f3396bbd0d"
             name="staff"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -609,14 +1085,15 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="e0bdca42-704e-4929-aef4-a8a6215c9d35"
-                LastKnownName="List&lt;"
+                Id="5794221b-c124-4ffe-a52d-e959f5db2740"
+                LastKnownName="List&lt;Employee&gt;"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
           <property
             Id="55f12e4d-e089-497f-9ba2-ef6d2251326e"
             name="groups"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -635,6 +1112,7 @@
           <property
             Id="91592d3a-9e93-4332-91a2-c7a5e9f71585"
             name="headerOfCathedra"
+            visibility="Private"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -644,14 +1122,1150 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="86154857-4527-42cf-9674-3212fc700b3e"
-                LastKnownName="CathedraSystem::Employee"
+              <classMoniker
+                Id="aa5eeaa8-de7b-4287-8ac1-e490bb5a2f63"
+                LastKnownName="Employee"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="31de32e2-03ca-40b4-a1c9-c54da5016c29"
+            name="AddNewEmployee"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e547cb42-fbef-412b-931d-3ad37cabb8d6"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3ce2460e-af8f-485c-97ea-e7e143db2415"
+                      LastKnownName="void"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="710d065e-d1e1-4744-9c15-231ac957ba72"
+            name="AddNewGroup"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e1ec0b1b-8daf-4ac1-9f97-c0509841e7af"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3ce2460e-af8f-485c-97ea-e7e143db2415"
+                      LastKnownName="void"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2a3d8ec1-211c-4d4d-b7b8-a339d8473a54"
+            name="SetHeaderOfCathedra"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="634597d8-860f-4409-b7bc-1672aa32fc71"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3ce2460e-af8f-485c-97ea-e7e143db2415"
+                      LastKnownName="void"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4b11ff90-2a68-43d6-b1e9-56af496fb959"
+            name="GetGroup"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1bea6b37-31b1-49ac-98cb-e6f63fc58896"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="65d7484f-1d50-467c-8f7a-23733c981887"
+                      LastKnownName="Group"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e58001d4-de21-4d00-97aa-fc2a09df1e45"
+                  name="String name"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9532f965-dda9-44d0-a923-75020ccf290a"
+            name="GetHeaderCathedraSystem"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="614838bc-6545-47cd-9c1c-e36c756f013f"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="aa5eeaa8-de7b-4287-8ac1-e490bb5a2f63"
+                      LastKnownName="Employee"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d906dbb7-cf70-4305-bc33-1f1281a2ea00"
+            name="GetListGoups"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9ffc63f9-b950-4ac8-8c2a-9b31f1107bb9"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="8d41ceda-0846-421d-8fa9-257221c2840a"
+                      LastKnownName="List&lt;Group&gt;"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ee8aa217-c0fa-4dee-b0c1-c24227d5199c"
+            name="GetEmployee"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="64d44214-51c8-48b1-af3f-ef63d7324668"
+                  name="Employee e"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8f834cbc-77d5-4668-96bf-275eae4082eb"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="8028b0c6-9f22-4084-9f7a-acf6f48d5bc9"
+                      LastKnownName="Emplyee"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="5577bafb-4ad1-459a-836e-f8e57ffeb578"
+        name="Actor1"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="391bbf9c-22f9-4751-865e-aaa81461f853"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Показати всіх студентів кафедри"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5185353e-16ad-4939-8ec9-d16c788d0d13"
+              LastKnownName="Показати всіх студентів кафедри"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5556cbbf-a278-4232-8617-759924e5843e"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="79e74f6e-137d-4a36-97b8-5e7472ddeb58"
+                  name="Показати всіх студентів кафедри"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b43fdb52-1bea-4fb3-850d-60b4f65816f5"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Показати студентів групи"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b314c26d-924e-4f20-b858-bfce6ca44d3b"
+              LastKnownName="Показати студентів групи"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="142c89e6-7449-4d59-81d8-f504f17ce25e"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8bbfb443-54ec-4abc-b593-f17e928bb12e"
+                  name="Показати студентів групи"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="64b7eb9c-67ce-4fe7-839e-0919ba21514f"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Показати групи"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="30bc7133-7ea2-48d9-bcfa-67ead587b408"
+              LastKnownName="Показати групи"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d22fbde1-3a07-4f69-98bb-8ab4c06bffeb"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5b1937cb-5c5b-4c51-b5d8-30c74cba3fc0"
+                  name="Показати групи"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="58ce3cc2-0ee4-47a5-bcf8-7d2acf2fbf6a"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Показати співробітників кафедри"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="348cb42c-2a85-4311-8bdf-d4c733f52b53"
+              LastKnownName="Показати співробітників кафедри"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9d0df733-bb08-4427-ad05-6822f8d806e6"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="be0ba94c-1428-422b-8af9-0a733f1b1866"
+                  name="Показати співробітників кафедри"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8a80443e-63fa-4460-9930-d1e52d45a425"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Показати інформацію про персону"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="74c128bb-7135-482d-9cc8-c3e02040be6a"
+              LastKnownName="Показати інформацію про персону"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a26c659b-c5c2-45ae-9d66-b5780754e863"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8ffe54d4-5bb7-44f7-8be0-ffe5e9a25800"
+                  name="Показати інформацію про персону"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fc624dc1-964a-47c2-9696-fc6e7c4986d7"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Редагувати дані кафедри"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0cc3af1a-27e1-43b6-9a8e-bd6d884de72c"
+              LastKnownName="Редагувати дані кафедри"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f775168c-f05c-4cdd-aeef-a747fc7a7f82"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c722ee12-8a52-4738-82f5-bfa5c1c22de1"
+                  name="Редагувати дані кафедри"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d4578541-060a-433b-a519-fa29e1e36a99"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Редагувати дані персони"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="166c73d9-f53d-4090-9bb8-a5313135f9db"
+              LastKnownName="Редагувати дані персони"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5540977c-3933-44c7-91e8-300b441227b8"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fac97e13-ef20-443c-9e27-aed8a7885159"
+                  name="Редагувати дані персони"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a28a060f-eb46-4c58-9dea-d7be0de108f0"
+            isDerived="false"
+            sourceEndRoleName="Actor1"
+            targetEndRoleName="Зберегти базу даних"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5b3b0ec8-8d8d-4bc2-bee0-948aa7db2aa1"
+              LastKnownName="Зберегти базу даних"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dabb8b1a-c443-4b58-8156-d2895673e966"
+                  name="Actor1"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="74d2c4ca-8162-4f88-8859-9b4f1200f316"
+                  name="Зберегти базу даних"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="30bc7133-7ea2-48d9-bcfa-67ead587b408"
+        name="Показати групи"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Показати наявні на кафедрі групи
+Контекст використання: надається можливість продивитися існуючі групи кафедри
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: демонстрація даних кафедри
+Передумова: -
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: буде виведені назви існуючих груп
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Демонстрація наявних груп
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+
+</description>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b314c26d-924e-4f20-b858-bfce6ca44d3b"
+        name="Показати студентів групи"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Показати студентів вказаної групи
+Контекст використання: надається можливість продивитися студентський  склад групи 
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: демонстрація даних групи
+Передумова: вказана існуюча група
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: буде виведені ПІБ студентів групи
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Демонстрація студентів в групі
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+
+
+</description>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5185353e-16ad-4939-8ec9-d16c788d0d13"
+        name="Показати всіх студентів кафедри"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Показати студентів кафедри
+Контекст використання: надається можливість продивитися загальний студентський  склад  
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: демонстрація даних кафедри
+Передумова: -
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: буде виведені ПІБ студентів кафедри
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Демонстрація студентів на кафедрі
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+
+
+
+</description>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="348cb42c-2a85-4311-8bdf-d4c733f52b53"
+        name="Показати співробітників кафедри"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Показати співробітників кафедри
+Контекст використання: надається можливість продивитися загальний склад  співробітників
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: демонстрація даних кафедри
+Передумова: -
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: буде виведені ПІБ співробітників кафедри
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Демонстрація співробітників на кафедрі
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+
+
+
+
+</description>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="74c128bb-7135-482d-9cc8-c3e02040be6a"
+        name="Показати інформацію про персону"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Показати дані про вказану персону
+Контекст використання: надається можливість продивитися відомості про персону
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: демонстрація даних персони
+Передумова: -
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: буде виведені дані персони
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання ПІБ персони
+3. Виведення даних про персону.
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+
+
+
+
+</description>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e69ac73b-463c-4cd1-bf4d-8f1a0f20c82b"
+        name="Звільнення співробітника"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Видалення співробітника з кафедри
+Контекст використання: надається можливість видалити вказаного співробітника з кафедри
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних кафедри
+Передумова: на кафедрі існує хоч один співробітник
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: зі списку співробітників видалено вказану особу
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання ПІБ та посади співробітника
+3. Звільнення особи з відповідної посади
+Альтернатива1: 
+1. Вказано дані неіснуючого співробітника
+2. Вивід оповіщення про відповідну проблему
+3. Повернення на пункт 2 основного сценарію
+
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+
+</description>
+        <extendedCases>
+          <extend
+            Id="3a73a414-76fc-4154-bd1c-7bdeb5075925">
+            <useCaseMoniker
+              Id="0cc3af1a-27e1-43b6-9a8e-bd6d884de72c"
+              LastKnownName="Редагувати дані кафедри"
+              LastKnownLocation="ModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0794736a-002e-4807-b388-6d12dd79cc2b"
+        name="Прийняття на роботу співробітника"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Створення нового співробітника кафедри
+Контекст використання: надається можливість додати нового співробітника на кафедру
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних кафедри
+Передумова: -
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: до списку співробітників додано нову особу
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання даних нового співробітника
+3. Додавання нового співробітника до загального списку
+Альтернатива: 
+1. Додається співробітник на посаду, яка вже зайнята та яку може посідати лише одна особа
+2. Вивід оповіщення про відповідну проблему
+3. Надаються варіанти : 
+1)Замінити новим співробітником існуючого
+2)Не створювати нового співробітника
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+</description>
+        <extendedCases>
+          <extend
+            Id="5d54875f-3e66-4a03-8d94-2acbb348e03e">
+            <useCaseMoniker
+              Id="0cc3af1a-27e1-43b6-9a8e-bd6d884de72c"
+              LastKnownName="Редагувати дані кафедри"
+              LastKnownLocation="ModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2a9e4a53-4c60-4a53-ac56-dc26af7bb579"
+        name="Відрахування студента"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Видалення студента з кафедри
+Контекст використання: надається можливість видалити вказаного студента з кафедри
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних кафедри
+Передумова: на кафедрі існує хоч один студент
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: зі списку студентів видалено вказану особу
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання ПІБ студента
+3. Видалення студента зі загального списку студентів
+Альтернатива1: 
+1. Вказано дані неіснуючого студента
+2. Вивід оповіщення про відповідну проблему
+3. Повернення на пункт 2 основного сценарію
+Альтернатива1: 
+1. Існують студенти з однаковими ПІБ
+2. Вказання додаткових даних
+3. Видалення студента зі загального списку студентів
+
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+</description>
+        <extendedCases>
+          <extend
+            Id="8ee01f8c-a8b7-41d6-9663-4048b3566d66">
+            <useCaseMoniker
+              Id="0cc3af1a-27e1-43b6-9a8e-bd6d884de72c"
+              LastKnownName="Редагувати дані кафедри"
+              LastKnownLocation="ModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8c54ba93-6104-4b59-be78-b220b4c428f3"
+        name="Зарахування студента"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Створення нового студента на кафедрі
+Контекст використання: надається можливість додати нового студента на кафедру
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних кафедри
+Передумова: на кафедрі існує хоч одна група
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: до списку студентів додано нову персону
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання основних даних нового студента
+3. Додавання студента до групи кафедри залежно від вказаних даних
+Альтернатива: 
+1. Вказано недопустимі значення даних студента , або заповнені не всі дані
+2. Вивід оповіщення про відповідну проблему
+3. Повернення на пункт 2 основного сценарію
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+</description>
+        <extendedCases>
+          <extend
+            Id="d7ffa13b-fd73-44f2-8b3b-b220bc72adb9">
+            <useCaseMoniker
+              Id="0cc3af1a-27e1-43b6-9a8e-bd6d884de72c"
+              LastKnownName="Редагувати дані кафедри"
+              LastKnownLocation="ModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5f436a20-7f6b-4e4a-aeff-522fd3e40c1a"
+        name="Додати нову групу"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Створення нової групи на кафедрі
+Контекст використання: надається можливість додати нову групу на кафедру
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних кафедри
+Передумова: -
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: до списку груп додано новий елемент
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання назви нової групи
+3. Додавання групи до списку
+Альтернатива: 
+1. Вказано назву вже існуючої групи
+2. Вивід оповіщення про відповідну проблему
+3. Повернення на пункт 2 основного сценарію
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+</description>
+        <extendedCases>
+          <extend
+            Id="26994bc5-38c1-4ca7-8b12-48734879c0ee">
+            <useCaseMoniker
+              Id="0cc3af1a-27e1-43b6-9a8e-bd6d884de72c"
+              LastKnownName="Редагувати дані кафедри"
+              LastKnownLocation="ModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3423d0a7-23fc-4d8b-a3c4-f4aebac12d52"
+        name="Видалити існуючу групу"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Видалення групи з кафедри
+Контекст використання: надається можливість видалити групу з кафедри
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних кафедри
+Передумова: вказана існуюча група
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: зі списку груп видалено вказаний елемент
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання назви групи
+3. Видалення групи зі загального списку груп
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+
+
+</description>
+        <extendedCases>
+          <extend
+            Id="c9444726-f5f1-4661-8202-f39a3d9a50db">
+            <useCaseMoniker
+              Id="0cc3af1a-27e1-43b6-9a8e-bd6d884de72c"
+              LastKnownName="Редагувати дані кафедри"
+              LastKnownLocation="ModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0cc3af1a-27e1-43b6-9a8e-bd6d884de72c"
+        name="Редагувати дані кафедри"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Редагування даних кафедри
+Контекст використання: надається можливість редагувати основні характеристики
+кафедри (назва факультету, кафедри, чисельність студентів та співробітників тощо)
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних кафедри
+Передумова: -
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: змінена та збережена вказана відповідна інформація 
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вибір характеристики, яку необхідно змінити
+3. Вказання нового значення характеристики
+4. Зміна вказаної характеристики
+Альтернатива: 
+1. Вказано недопустимі значення для обраної характеристики
+2. Вивід оповіщення 
+3. Дані не зазнають змін
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+</description>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0f2db6e4-451f-47f4-a074-6bbd5d03e0e0"
+        name="Перевід до іншої групи"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Редагування особистих даних персони
+Контекст використання: надається можливість змінити групу на кафедрі для
+вказаної персони (студента)
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних персони
+Передумова: вказана існуюча персона
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: змінена та збережена вказана відповідна інформація 
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання ПІБ та за необхідності додаткових даних персони
+3. Вказання нової групи для особи
+4. Зміна вказаних даних
+Альтернатива: 
+1. Вказано неіснуючу групу
+2. Вивід оповіщення 
+3. Дані не зазнають змін
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+</description>
+        <extendedCases>
+          <extend
+            Id="3c73d295-6b87-400f-97ca-7a410685eaf2">
+            <useCaseMoniker
+              Id="166c73d9-f53d-4090-9bb8-a5313135f9db"
+              LastKnownName="Редагувати дані персони"
+              LastKnownLocation="ModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a30ff8a3-ed97-4f61-b3cc-7ff4da17e11e"
+        name="Зміна професійних даних"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Редагування професійних даних персони
+Контекст використання: надається можливість редагувати такі дані вказаної персони
+як середній бал, заборгованість(для студентів), стаж, платня (для співробітникві).
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних персони
+Передумова: вказана існуюча персона
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: змінена та збережена вказана відповідна інформація 
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання ПІБ та за необхідності додаткових даних персони
+3. Вказання нових значень потрібних характеристик
+4. Зміна вказаних даних
+Альтернатива: 
+1. Вказано недопустимі значення для обраної характеристики
+2. Вивід оповіщення 
+3. Дані не зазнають змін
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+
+</description>
+        <extendedCases>
+          <extend
+            Id="fe05d66f-ccb6-40a1-8f9d-ab919c1a498b">
+            <useCaseMoniker
+              Id="166c73d9-f53d-4090-9bb8-a5313135f9db"
+              LastKnownName="Редагувати дані персони"
+              LastKnownLocation="ModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="57e8f87a-64d1-4f3c-b626-5c44640baa30"
+        name="Зміна особистих даних"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Редагування особистих даних персони
+Контекст використання: надається можливість редагувати такі дані вказаної персони
+як вік, стать, ПІБ тощо.
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних персони
+Передумова: вказана існуюча персона
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: змінена та збережена вказана відповідна інформація 
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання ПІБ та за необхідності додаткових даних персони
+3. Вказання нових значень потрібних характеристик
+4. Зміна вказаних даних
+Альтернатива: 
+1. Вказано недопустимі значення для обраної характеристики
+2. Вивід оповіщення 
+3. Дані не зазнають змін
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+
+</description>
+        <extendedCases>
+          <extend
+            Id="e7e0ef33-b943-4043-9575-bb95772f9d67">
+            <useCaseMoniker
+              Id="166c73d9-f53d-4090-9bb8-a5313135f9db"
+              LastKnownName="Редагувати дані персони"
+              LastKnownLocation="ModelingProject1.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="166c73d9-f53d-4090-9bb8-a5313135f9db"
+        name="Редагувати дані персони"
+        isAbstract="false"
+        isLeaf="false">
+        <description>Назва: Редагування даних персони
+Контекст використання: надається можливість редагувати дані вказаної персони
+Область дії: головний застосунок
+Рівень: функціональні вимоги
+Основна дійова особа: користувач
+Учасники та інтереси: зміна даних персони
+Передумова: вказана існуюча персона
+Мінімальні гарантії: змін в роботі програми не відбудеться, дані не оновляться
+Гарантії успіху: змінена та збережена вказана відповідна інформація 
+Тригер: вибір відповідної дії в програмі користувачем
+Основний сценарій: 
+1. Вибір відповідної дії користувачем
+2. Вказання ПІБ та за необхідності додаткових даних персони
+3. Вказання нових значень потрібних характеристик
+4. Зміна вказаних даних
+Альтернатива: 
+1. Вказано недопустимі значення для обраної характеристики
+2. Вивід оповіщення 
+3. Дані не зазнають змін
+Список змінень в технології і данних: -
+Допоміжна інформація: -
+</description>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5b3b0ec8-8d8d-4bc2-bee0-948aa7db2aa1"
+        name="Зберегти базу даних"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="3ce2460e-af8f-485c-97ea-e7e143db2415"
+        name="void" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="39889017-fc59-46ac-ab4c-d63961b043b6"
+        name="bool" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="5127544d-94e8-442a-8a12-af58b6c96459"
+        name="List&lt;Students&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="5794221b-c124-4ffe-a52d-e959f5db2740"
+        name="List&lt;Employee&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="8d41ceda-0846-421d-8fa9-257221c2840a"
+        name="List&lt;Group&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="8028b0c6-9f22-4084-9f7a-acf6f48d5bc9"
+        name="Emplyee" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="10bb7fe1-90e3-496d-a765-57c850ae1e3c"
+        name="ContractOrFree" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

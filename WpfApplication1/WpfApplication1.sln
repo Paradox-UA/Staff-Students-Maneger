@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication1", "WpfApplication1\WpfApplication1.csproj", "{2EB3138C-C63D-420F-90BB-4F1A0CC974EF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Staff-StudentManager", "WpfApplication1\Staff-StudentManager.csproj", "{2EB3138C-C63D-420F-90BB-4F1A0CC974EF}"
 EndProject
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "ModelingProject1", "ModelingProject1\ModelingProject1.modelproj", "{E407BE2C-DA53-4F48-A389-D22FD49CEDB7}"
 EndProject

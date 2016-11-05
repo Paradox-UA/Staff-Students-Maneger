@@ -29,6 +29,13 @@
       <SubType>Content</SubType>
       <DependentUpon>StaffManager.classdiagram</DependentUpon>
     </Content>
+    <Content Include="StaffStudentsManager.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="StaffStudentsManager.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>StaffStudentsManager.usecasediagram</DependentUpon>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\ModelingProject1.uml">
       <SubType>Content</SubType>
