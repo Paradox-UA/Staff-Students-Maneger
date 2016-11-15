@@ -55,6 +55,47 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="6ac65fe7-111f-42cb-91e9-d72b60c9e60d"
+            isDerived="false"
+            sourceEndRoleName="Person"
+            targetEndRoleName="Passport"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="444f71ca-af1f-4c27-8410-91968323741b"
+              LastKnownName="Passport"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5380eb56-541d-4cca-a2e1-307607c36494"
+                  name="Person"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f3c124eb-cfde-4817-ac09-6e43413fed37"
+                  name="Passport"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="b7bd106e-04a1-4e1d-a5b8-26093eecd279"
@@ -110,6 +151,25 @@
               <primitiveTypeMoniker
                 Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
                 LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5bb97e55-c3ae-4ee4-a71a-0bac272b49c7"
+            name="PassportInfo"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="52387e00-d714-4815-9d6d-d80e322635dd"
+                LastKnownName="Pasport"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
@@ -280,6 +340,45 @@
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
+          <operation
+            Id="f845e855-5514-43c3-8976-e2969d039ac3"
+            name="GetPassportInfo:Passport"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="05c7f0e7-55b1-4497-a5b9-510ad39fd237"
+            name="SetPassportInfo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f6fae8d7-db14-4e4b-91a1-051e86ff01d7"
+                  name="Passport info"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f4e35f29-158a-462b-a82c-f49957b0f26b"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="3ce2460e-af8f-485c-97ea-e7e143db2415"
+                      LastKnownName="void"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -302,93 +401,41 @@
         </generalsInternal>
         <targetEnds>
           <association
-            Id="bf6708a2-5c63-44d4-8ae3-c828097a4084"
+            Id="14313e41-d47c-48a8-8edc-8404e64b251c"
             isDerived="false"
             sourceEndRoleName="Student"
-            targetEndRoleName="Group"
+            targetEndRoleName="ContractOrFreeForm"
             isLeaf="false"
             isAbstract="false">
-            <classMoniker
-              Id="65d7484f-1d50-467c-8f7a-23733c981887"
-              LastKnownName="Group"
+            <enumerationMoniker
+              Id="c44199ee-d0b7-437a-85d4-3a320c5773f3"
+              LastKnownName="ContractOrFreeForm"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="37ffa24d-b246-40dd-81ba-e045b7d6e02d"
+                  Id="1c848326-ff47-4a10-99a7-c22fa36e4beb"
                   name="Student"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="3db64cc2-c0de-4993-b747-c1fb35861a28"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="a82ef6c3-0639-47fb-8473-1953c8a61e31"
-                      name="Upper"
-                      value="n" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="25bb103e-ee9b-4d80-91b3-9b8ff9926c58"
-                  name="Group"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="6528f494-1d6c-4e04-9b8c-a6d45619bcad"
-            isDerived="false"
-            sourceEndRoleName="Student"
-            targetEndRoleName="Employee"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="aa5eeaa8-de7b-4287-8ac1-e490bb5a2f63"
-              LastKnownName="Employee"
-              LastKnownLocation="ModelingProject1.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="af1841cb-21c9-4945-97c0-1de43f6db90e"
-                  name="Student"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
+                  aggregation="Composite"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="08c3c4a5-c062-4ef6-864f-fa7d41581c4a"
-                  name="Employee"
+                  Id="5e7691c9-7ede-4c39-8e0e-0da264507dbe"
+                  name="ContractOrFreeForm"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="true" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -504,93 +551,41 @@
         </generalsInternal>
         <targetEnds>
           <association
-            Id="46f9fad8-5efd-4f34-8b03-32936cd90fcb"
+            Id="08044e53-83d7-45a7-9fd8-9cd93e53090c"
             isDerived="false"
             sourceEndRoleName="Employee"
-            targetEndRoleName="Cathedra"
+            targetEndRoleName="Position"
             isLeaf="false"
             isAbstract="false">
-            <classMoniker
-              Id="2d896c4c-7867-481d-bc88-82f1c314b324"
-              LastKnownName="Cathedra"
+            <enumerationMoniker
+              Id="39daad53-5001-4c1e-a919-076b09201246"
+              LastKnownName="Position"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="c10750a6-cbfb-41c2-86b1-bcb3b6793cce"
+                  Id="93de5e72-10bd-4c93-a0a4-290c79db4c33"
                   name="Employee"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
-                  aggregation="Shared"
-                  isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="17f45fd6-fbe0-4ab6-beba-2962058a62ef"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="bafb4d78-a42b-4616-993f-ece2a22d8d24"
-                      name="Upper"
-                      value=".n" />
-                  </upperValueInternal>
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f8c1c9a9-d1bf-410c-91c7-ae33ff1c5089"
-                  name="Cathedra"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-          <association
-            Id="947f8d32-41f2-4fef-be87-9cc71b64d63c"
-            isDerived="false"
-            sourceEndRoleName="Employee"
-            targetEndRoleName="Student"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="44928ffe-a62e-4567-aa78-5ec9214df5f3"
-              LastKnownName="Student"
-              LastKnownLocation="ModelingProject1.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="2a4a0bd7-d849-499c-8683-2d4792c5130b"
-                  name="Employee"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
+                  aggregation="Composite"
                   isComposite="false"
                   isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="202804d2-fff1-475a-bbc0-154eecc72b79"
-                  name="Student"
+                  Id="e50ec534-c0fa-4a8a-8ae1-ab52268ae726"
+                  name="Position"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="true" />
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -693,47 +688,26 @@
         name="Position"
         isAbstract="false"
         isLeaf="false">
-        <targetEnds>
-          <association
-            Id="be4b5e9f-8aae-4438-a29f-957b5979a24e"
-            isDerived="false"
-            sourceEndRoleName="Position"
-            targetEndRoleName="Employee"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="aa5eeaa8-de7b-4287-8ac1-e490bb5a2f63"
-              LastKnownName="Employee"
-              LastKnownLocation="ModelingProject1.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="d095d3fb-ce2a-4a27-ba91-067431bfcc66"
-                  name="Position"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Composite"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="4ab561a1-153d-4401-ae3d-4ceb0d11e957"
-                  name="Employee"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="true" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="9972c390-fd55-40cf-8b21-05b2887ed933"
+            name="Assistant" />
+          <enumerationLiteral
+            Id="a09425e0-735d-4e14-8fdc-838c9c9f3eb2"
+            name="GraduateStudent" />
+          <enumerationLiteral
+            Id="24ba90d4-8aa1-41ac-aad8-c32e4b5ba3fa"
+            name="Docent" />
+          <enumerationLiteral
+            Id="3407b96a-50ce-4caa-8e32-43838d1f1f9e"
+            name="SimpleCollaborator" />
+          <enumerationLiteral
+            Id="86d8b3de-744d-4e20-866f-5fce55b0ce5f"
+            name="Teacher" />
+          <enumerationLiteral
+            Id="608a6207-4f2c-4bbf-8ef7-79f2f1e129a1"
+            name="Professor" />
+        </ownedLiterals>
       </enumeration>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -742,47 +716,6 @@
         name="ContractOrFreeForm"
         isAbstract="false"
         isLeaf="false">
-        <targetEnds>
-          <association
-            Id="897d4152-c0c8-4c8e-82f2-9ba1b9319efb"
-            isDerived="false"
-            sourceEndRoleName="ContractOrFreeForm"
-            targetEndRoleName="Student"
-            isLeaf="false"
-            isAbstract="false">
-            <classMoniker
-              Id="44928ffe-a62e-4567-aa78-5ec9214df5f3"
-              LastKnownName="Student"
-              LastKnownLocation="ModelingProject1.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="f766176a-a06c-4725-a815-377ee6878319"
-                  name="ContractOrFreeForm"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="Composite"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="b8b73b74-fd26-4718-b7b4-008f065e855b"
-                  name="Student"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="true" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
         <ownedLiterals>
           <enumerationLiteral
             Id="038e0994-676e-4533-bbee-ef8e631946a9"
@@ -802,20 +735,20 @@
         isActiveClass="false">
         <targetEnds>
           <association
-            Id="f2ef59a6-8984-4d15-9c5c-93b57a8ea30b"
+            Id="b3723c62-706b-4468-9a67-39fd4a67ae15"
             isDerived="false"
             sourceEndRoleName="Group"
-            targetEndRoleName="Cathedra"
+            targetEndRoleName="Student"
             isLeaf="false"
             isAbstract="false">
             <classMoniker
-              Id="2d896c4c-7867-481d-bc88-82f1c314b324"
-              LastKnownName="Cathedra"
+              Id="44928ffe-a62e-4567-aa78-5ec9214df5f3"
+              LastKnownName="Student"
               LastKnownLocation="ModelingProject1.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="eef325dc-ec1c-4c88-83e9-98462629ee40"
+                  Id="fb0e890d-d70b-4dd5-b333-b8ebc9ceb345"
                   name="Group"
                   isLeaf="false"
                   isStatic="false"
@@ -824,32 +757,32 @@
                   isDerivedUnion="false"
                   aggregation="Shared"
                   isComposite="false"
-                  isNavigableOwned="false">
-                  <lowerValueInternal>
-                    <literalString
-                      Id="f2be2cb5-724a-49f3-a892-69f824d35231"
-                      name="Lower"
-                      value="1" />
-                  </lowerValueInternal>
-                  <upperValueInternal>
-                    <literalString
-                      Id="935a3b38-7c64-469f-9766-0895903ccf8c"
-                      name="Upper"
-                      value="n" />
-                  </upperValueInternal>
-                </memberEnd>
+                  isNavigableOwned="false" />
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
                 <memberEnd
-                  Id="1f802b58-c00a-48d2-b1e9-203d619571af"
-                  name="Cathedra"
+                  Id="92850ad8-8ade-4b4b-a224-2b75ead73873"
+                  name="Student"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="086db722-fb14-4bb5-9a84-e2a95e0afe96"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f060b13a-4a95-4d98-857a-cd05fcad19f0"
+                      name="Upper"
+                      value=".n" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -1070,6 +1003,112 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="176f1a21-c8d3-4d91-913c-6140b704cda2"
+            isDerived="false"
+            sourceEndRoleName="Cathedra"
+            targetEndRoleName="Group"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="65d7484f-1d50-467c-8f7a-23733c981887"
+              LastKnownName="Group"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7a9e70b8-05b8-43f3-9527-a96b05a798b1"
+                  name="Cathedra"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f71fb8f1-cc2e-4b7b-9236-ba8efc1d055a"
+                  name="Group"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="38fedb52-fdfc-4739-a86a-c8d0109785a0"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="50830e02-71eb-4264-b331-f264f959c624"
+                      name="Upper"
+                      value=".n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="69af00ea-5e7b-40b0-9323-d4ff9cd62ef0"
+            isDerived="false"
+            sourceEndRoleName="Cathedra"
+            targetEndRoleName="Employee"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="aa5eeaa8-de7b-4287-8ac1-e490bb5a2f63"
+              LastKnownName="Employee"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="db1ec4d0-e834-4251-bade-b8617de2761e"
+                  name="Cathedra"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7ded51e7-43d1-47f6-913c-5a6239b5b403"
+                  name="Employee"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c06533ab-6b3d-4b8f-8861-5f43e21e5e0c"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="662d0a5b-268c-4434-bfa7-9117aa646657"
+                      name="Upper"
+                      value=".n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="73155d59-70ca-48a2-9856-22f3396bbd0d"
@@ -2266,6 +2305,144 @@
       <undefinedType
         Id="10bb7fe1-90e3-496d-a765-57c850ae1e3c"
         name="ContractOrFree" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="444f71ca-af1f-4c27-8410-91968323741b"
+        name="Passport"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="df1daeb7-aa19-46d2-bb02-51dd2a9a2805"
+            name="id"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="a4f0bbc2-1ecb-4317-9c47-f7caf3e7dd39"
+            name="number"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="9c5df6e4-9624-49d0-84ca-9ebad7e39669"
+                LastKnownName="int"
+                LastKnownLocation="ModelingProject1.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="bb14211d-1d74-47f8-9a52-59cc8a4ae00d"
+            name="GetID"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="df6c4d0b-4a80-4a7d-9d46-692df7c3feb2"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="59064651-8b59-4918-8320-35e6171d55ec"
+            name="GetNumber"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c9bd8159-ee4c-43a4-b994-efc86b4924cf"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4d0b446c-72e5-4c56-9507-974d70c6de58"
+            name="ToString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7efdfab3-e45c-4975-974c-deb0f2a5455e"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="15ed7fae-1424-4b92-9e9c-23bd9018cfb1"
+                      LastKnownName="string"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="9c5df6e4-9624-49d0-84ca-9ebad7e39669"
+        name="int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="15ed7fae-1424-4b92-9e9c-23bd9018cfb1"
+        name="string" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="52387e00-d714-4815-9d6d-d80e322635dd"
+        name="Pasport" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
