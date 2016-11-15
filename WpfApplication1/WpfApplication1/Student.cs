@@ -8,5 +8,27 @@ namespace WpfApplication1
 {
     class Student:Person
     {
+        private FreeOrContract freeOrContract;
+
+        public Student():base()
+        {
+            freeOrContract = FreeOrContract.Free;           
+        }
+        public Student(Person p,FreeOrContract fc) : base(p.Name, p.LastName, p.Surname, p.PassportInfo)
+        {
+            freeOrContract = fc;
+        }
+        public FreeOrContract FreeOrContract
+        {
+            get
+            {
+                return freeOrContract;
+            }
+
+            set
+            {
+                freeOrContract = value;
+            }
+        }
     }
 }

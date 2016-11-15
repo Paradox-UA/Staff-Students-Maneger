@@ -442,25 +442,6 @@
         </targetEnds>
         <ownedAttributesInternal>
           <property
-            Id="ccc59981-f8eb-4fe4-8b54-35c88f498eb2"
-            name="employee"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="86154857-4527-42cf-9674-3212fc700b3e"
-                LastKnownName="CathedraSystem::Employee"
-                LastKnownLocation="ModelingProject1.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="5a0cae19-cdf6-44c0-b198-3239ab2efd9c"
             name="contractOrFree"
             visibility="Private"
@@ -499,30 +480,6 @@
                     <undefinedTypeMoniker
                       Id="10bb7fe1-90e3-496d-a765-57c850ae1e3c"
                       LastKnownName="ContractOrFree"
-                      LastKnownLocation="ModelingProject1.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="9788e94f-40de-4ca4-9102-b7fd3a848c26"
-            name="GetEmplyee"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="67ed34e6-fbc4-4a3e-9f04-4fd450b487d8"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="aa5eeaa8-de7b-4287-8ac1-e490bb5a2f63"
-                      LastKnownName="Employee"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -592,25 +549,6 @@
         </targetEnds>
         <ownedAttributesInternal>
           <property
-            Id="21984c32-a905-4fe1-962f-50bca3ba425a"
-            name="student"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="766f9034-d20e-4c3b-9092-695ce0924233"
-                LastKnownName="CathedraSystem::Student"
-                LastKnownLocation="ModelingProject1.uml" />
-            </type_NamedElement>
-          </property>
-          <property
             Id="baccf1d4-9de0-4969-85d6-95c3c3596ea8"
             name="position"
             visibility="Private"
@@ -649,30 +587,6 @@
                     <enumerationMoniker
                       Id="39daad53-5001-4c1e-a919-076b09201246"
                       LastKnownName="Position"
-                      LastKnownLocation="ModelingProject1.uml" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation
-            Id="70e0d098-cdf0-46b3-8168-70947ebef316"
-            name="GetStudent"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false">
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter
-                  Id="c0185220-3f8c-4a9e-a689-1ea3343b8134"
-                  direction="Return"
-                  isUnique="false">
-                  <type_NamedElement>
-                    <classMoniker
-                      Id="44928ffe-a62e-4567-aa78-5ec9214df5f3"
-                      LastKnownName="Student"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>

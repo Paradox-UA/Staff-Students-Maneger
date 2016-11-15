@@ -2,16 +2,6 @@
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="538a8612-925d-4fa5-a446-60f297accf9a" name="StaffManager" linkedPackageId="e35d2186-0670-4ee4-a61c-90a9e9cddaca" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <packageHasNamedElement>
-      <referencedType Id="aa507775-8abd-4ed6-8e4f-57d4b23be36d" name="CathedraSystem::Employee" isAbstract="false" isLeaf="false" cachedFullName="CathedraSystem::Employee">
-        <elementDefinition Id="86154857-4527-42cf-9674-3212fc700b3e" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="fa978289-18eb-4622-9390-1483ce821482" name="CathedraSystem::Student" isAbstract="false" isLeaf="false" cachedFullName="CathedraSystem::Student">
-        <elementDefinition Id="766f9034-d20e-4c3b-9092-695ce0924233" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
       <referencedType Id="a25e12f1-39f3-4dd0-8a23-c1c7659673ec" name="Position" isAbstract="false" isLeaf="false" cachedFullName="Position">
         <elementDefinition Id="3f591c7d-8031-415d-bb94-a7bdcceb17e4" />
       </referencedType>
@@ -209,12 +199,6 @@
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="65e8a1d7-7963-4eba-b6a3-43ab48371a3d" name="employee" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="ccc59981-f8eb-4fe4-8b54-35c88f498eb2" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="aa507775-8abd-4ed6-8e4f-57d4b23be36d" LastKnownName="CathedraSystem::Employee" />
-            </type_NamedElement>
-          </property>
           <property Id="f25b8cd8-b740-4dc7-ae07-c1ab6261f414" name="contractOrFree" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="5a0cae19-cdf6-44c0-b198-3239ab2efd9c" />
             <type_NamedElement>
@@ -231,19 +215,6 @@
                   <elementDefinition Id="a52f716f-475c-4e46-ad19-c89e348856d0" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="354e35ed-c9ad-47b5-8252-5af233ba18cc" LastKnownName="ContractOrFree" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="a3abe6d4-b8d8-44b3-8784-478a02b8b6d8" name="GetEmplyee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="9788e94f-40de-4ca4-9102-b7fd3a848c26" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="7e232924-8ec1-4d8f-a66b-0abf64a9495d" direction="Return" isUnique="false">
-                  <elementDefinition Id="67ed34e6-fbc4-4a3e-9f04-4fd450b487d8" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="2934149a-1a4e-4eb0-8981-e1b66f27d498" LastKnownName="Employee" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -280,12 +251,6 @@
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="08d6fbf2-29d1-4204-a915-078485ece522" name="student" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="21984c32-a905-4fe1-962f-50bca3ba425a" />
-            <type_NamedElement>
-              <referencedTypeMoniker Id="fa978289-18eb-4622-9390-1483ce821482" LastKnownName="CathedraSystem::Student" />
-            </type_NamedElement>
-          </property>
           <property Id="52cc546f-c825-4014-b3ff-dc1968117a1f" name="position" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="baccf1d4-9de0-4969-85d6-95c3c3596ea8" />
             <type_NamedElement>
@@ -302,19 +267,6 @@
                   <elementDefinition Id="5dd2f9e2-f7cc-439a-851b-7bace2458511" />
                   <type_NamedElement>
                     <referencedTypeMoniker Id="3c6a306c-940d-441a-9225-2c889f6d0dd2" LastKnownName="Position" />
-                  </type_NamedElement>
-                </parameter>
-              </operationHasOwnedParameters>
-            </ownedParameters>
-          </operation>
-          <operation Id="6a742d1f-be15-4e1c-98c1-3be026750466" name="GetStudent" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="70e0d098-cdf0-46b3-8168-70947ebef316" />
-            <ownedParameters>
-              <operationHasOwnedParameters>
-                <parameter Id="7d0d1efe-75be-4b96-ad19-e1379fb87f7e" direction="Return" isUnique="false">
-                  <elementDefinition Id="c0185220-3f8c-4a9e-a689-1ea3343b8134" />
-                  <type_NamedElement>
-                    <referencedTypeMoniker Id="cf482dee-69da-45ad-ac43-70150eeef697" LastKnownName="Student" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
