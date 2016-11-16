@@ -30,5 +30,13 @@ namespace WpfApplication1
                 freeOrContract = value;
             }
         }
+        public override bool Equals(object obj)
+        {
+            return base.PassportInfo.Equals(obj);
+        }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }

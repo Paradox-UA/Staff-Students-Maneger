@@ -47,5 +47,16 @@ namespace WpfApplication1
                 number = value;
             }
         }
+        public override int GetHashCode()
+        {
+            return Id.GetHashCode() + number.GetHashCode();
+        }
+        public override bool Equals(object obj)
+        {
+            Passport passport = obj as Passport;
+            if (this.Id == passport.ID && this.number == passport.Number)
+                return true;
+            else return false;
+        }
     }
 }

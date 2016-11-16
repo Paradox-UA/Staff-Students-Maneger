@@ -29,5 +29,13 @@ namespace WpfApplication1
                 position = value;
             }
         }
+        public override bool Equals(object obj)
+        {
+            return base.PassportInfo.Equals(obj);
+        }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
