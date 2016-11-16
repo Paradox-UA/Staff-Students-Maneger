@@ -716,8 +716,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="f6561f51-7460-403c-9eaa-d82f30ec6800"
-                LastKnownName="List&lt;Student&gt;"
+                Id="a576965b-b055-4516-8b70-705dc1c01d96"
+                LastKnownName="HashSet &lt;Student&gt;"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
@@ -1038,8 +1038,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="5794221b-c124-4ffe-a52d-e959f5db2740"
-                LastKnownName="List&lt;Employee&gt;"
+                Id="26e880ce-249e-497a-a573-797d96f5a04b"
+                LastKnownName="HashSet&lt;Employee&gt;"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
@@ -1057,8 +1057,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="21c96606-0e70-4a57-ae9f-7fd92df45499"
-                LastKnownName="HashMap&lt;Group&gt;"
+                Id="95ca7216-4945-4866-a8cf-e07101e99f3c"
+                LastKnownName="HashSet&lt;Group&gt;"
                 LastKnownLocation="ModelingProject1.uml" />
             </type_NamedElement>
           </property>
@@ -1259,6 +1259,68 @@
                     <undefinedTypeMoniker
                       Id="8028b0c6-9f22-4084-9f7a-acf6f48d5bc9"
                       LastKnownName="Emplyee"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8b4cc183-05c2-4f31-8af3-64c9c820c87c"
+            name="RemoveEmployee"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fc1d489d-74cc-4d31-9991-bd0fc6568bf6"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="39889017-fc59-46ac-ab4c-d63961b043b6"
+                      LastKnownName="bool"
+                      LastKnownLocation="ModelingProject1.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7edf512e-b493-46ce-8d38-ee4ce5e78eef"
+                  name="Passport info"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="a0b4fec5-aa83-4793-ae63-5112b155d3ce"
+            name="RemoveGroup"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b4923b3c-175b-41f7-ba45-14c4387e34d7"
+                  name="String name"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="11072bd6-0f12-48fd-9bf8-eb9308466fbb"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="39889017-fc59-46ac-ab4c-d63961b043b6"
+                      LastKnownName="bool"
                       LastKnownLocation="ModelingProject1.uml" />
                   </type_NamedElement>
                 </parameter>
@@ -2357,6 +2419,21 @@
       <undefinedType
         Id="52387e00-d714-4815-9d6d-d80e322635dd"
         name="Pasport" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a576965b-b055-4516-8b70-705dc1c01d96"
+        name="HashSet &lt;Student&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="26e880ce-249e-497a-a573-797d96f5a04b"
+        name="HashSet&lt;Employee&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="95ca7216-4945-4866-a8cf-e07101e99f3c"
+        name="HashSet&lt;Group&gt;" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

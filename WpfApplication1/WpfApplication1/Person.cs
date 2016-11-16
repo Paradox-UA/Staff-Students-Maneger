@@ -79,5 +79,20 @@ namespace WpfApplication1
                 passportInfo = value;
             }
         }
+        public override int GetHashCode()
+        {
+            return passportInfo.GetHashCode();
+        }
+        public override bool Equals(object obj)
+        {
+            Person p = obj as Person;
+            if (p.Name == this.name && p.Surname == this.surname)
+                return true;
+            else return false;
+        }
+        public override string ToString()
+        {
+            return name + " " + lastName + " " + surname;
+        }
     }
 }
